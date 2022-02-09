@@ -1,0 +1,1003 @@
+{
+  "app": {
+    "status": "ACTIVE"
+  },
+  "general": {
+    "parentalGuidanceSystem": "UK_BBFC",
+    "accessibility": {
+      "contentTitleExpression": "{{item.title}}"
+    },
+    "deeplink": {
+      "appScheme": "hallmarkcadebug",
+      "endpoint": "www.watchhallmarktv.com",
+      "bindablePath": {
+        "share": "#/{% case item.subtype %}{% when 'VIDEO' %}movies/{{item.title | replace: ' ','+'}}{% when 'TV_SHOW' %}{{item.title | replace: ' ','+'}}/all{% when 'TV_SHOW_EPISODE' %}{{item.tvShow.title | replace: ' ','+'}}/{{item.title | replace: ' ','+'}}{% endcase%}",
+        "playback": "playback/{{item.type | downcase}}/{{item.id}}",
+        "detail": "details/{{item.subtype}}/{{item.type | downcase}}/{{item.id}}"
+      }
+    }
+  },
+  "theme": {his
+    "iconType": "FILL",
+    "color": {
+      "pageBackground": "#FAFDFD",
+      "pageHeadingForeground": "#072448",
+      "pageParagraphForeground": "#415A71",
+      "pageHighlightForeground": "#3BABD1",
+      "pageLinkForeground": "#3BABD1",
+      "buttonPrimaryDefaultBackground": "#3BABD1",
+      "buttonPrimaryFocusBackground": "#2F89A8",
+      "buttonPrimaryPressBackground": "#3BABD1",
+      "buttonPrimaryDefaultForeground": "#FFFFFF",
+      "buttonPrimaryFocusForeground": "#FFFFFF",
+      "buttonPrimaryPressForeground": "#FFFFFF",
+      "buttonSecondaryDefaultBackground": "#B0BAC780",
+      "buttonSecondaryFocusBackground": "#747D8380",
+      "buttonSecondaryPressBackground": "#B0BAC780",
+      "buttonSecondaryDefaultForeground": "#FFFFFF",
+      "buttonSecondaryFocusForeground": "#FFFFFF",
+      "buttonSecondaryPressForeground": "#FFFFFF",
+      "imageOverlayBackground": "#072448",
+      "imageOverlayHeadingForeground": "#FFFFFF",
+      "imageOverlayParagraphForeground": "#FFFFFF",
+      "imageOverlayHighlightForeground": "#3BABD1",
+      "imageOverlayLinkForeground": "#3BABD1",
+      "inputBackground": "#415A710D",
+      "inputForeground": "#415A71",
+      "navigationBarOpaqueBackground": "#3BABD1",
+      "navigationBarGradientBackground": "#00000033",
+      "navigationBarOpaqueForeground": "#FFFFFF",
+      "navigationBarGradientForeground": "#FFFFFF",
+      "navigationBarTranslucentLightForeground": "#072448",
+      "navigationBarTranslucentDarkForeground": "#072448",
+      "navigationBarForeground": "#FFFFFF",
+      "multiViewPickerBackground": "#FAFDFD",
+      "multiViewPickerItemFocusBackground": "#3BABD1",
+      "multiViewPickerItemActiveBackground": "#3BABD14C",
+      "multiViewPickerItemDefaultForeground": "#072448B3",
+      "multiViewPickerItemFocusForeground": "#072448",
+      "multiViewPickerItemActiveForeground": "#072448",
+      "menuOpaqueBackground": "#3BABD1",
+      "menuGradientBackground": "#3BABD1",
+      "menuItemDefaultForeground": "#FFFFFFB3",
+      "menuItemFocusForeground": "#FFFFFF",
+      "menuItemActiveForeground": "#FFFFFF",
+      "menuItemHighlightDefaultBackground": "#FFFFFF",
+      "menuItemHighlightFocusBackground": "#FFFFFF",
+      "menuItemHighlightActiveBackground": "#FFFFFF4D",
+      "bannerExceptionBackground": "#943D6B",
+      "bannerExceptionForeground": "#FFFFFF",
+      "bannerInfoBackground": "#EDF1F2",
+      "bannerInfoForeground": "#072448",
+      "dialogOverlayBackground": "#072448F2",
+      "dialogHeadingForeground": "#FFFFFF",
+      "dialogParagraphForeground": "#FFFFFF",
+      "videoPlayerControlProgressBarBackground": "#FFFFFF33",
+      "videoPlayerControlProgressBarForeground": "#FFFFFF",
+      "videoPlayerControlDefaultBackground": "#FFFFFF1A",
+      "videoPlayerControlFocusBackground": "#FFFFFF4D",
+      "videoPlayerControlPressBackground": "#FFFFFF4D",
+      "videoPlayerControlDefaultForeground": "#FFFFFF",
+      "videoPlayerControlFocusForeground": "#FFFFFF1A",
+      "videoPlayerControlPressForeground": "#FFFFFFCC",
+      "keyboardHighlightFocus": "#3BABD14D",
+      "keyboardHighlightActive": "#3D4C61FF",
+      "keyboardDefaultForeground": "#415A71",
+      "keyboardFocusForeground": "#FFFFFF",
+      "keyboardActiveForeground": "#FFFFFF",
+      "splashScreenBackground": "#3BABD1",
+      "splashScreenForeground": "#FFFFFF",
+      "iapGradientTop": "#3BABD1",
+      "iapGradientBottom": "#3BABD1",
+      "iapForeground": "#FFFFFF",
+      "sliderPaginationIndicatorDefault": "#415A714C",
+      "sliderPaginationIndicatorHighlighted": "#415A71",
+      "selectionControlsForeground": "#FFFFFF",
+      "iapEntitlementGradientSecondary": "#022D65",
+      "iapEntitlementTextButtonForeground": "#3BABD1",
+      "focusFrameForeground": "#3BABD1",
+      "buttonSecondaryPressBorder": "#FFFFFF00",
+      "iapEntitlementGradientPrimary": "#42B7DB",
+      "pageSecondaryBackground": "#F6F9F9",
+      "buttonPrimaryPressBorder": "#FFFFFF00",
+      "buttonPrimaryDefaultBorder": "#FFFFFF00",
+      "inputValidation": "#FFFFFF",
+      "inputErrorForeground": "#943D6B",
+      "buttonSecondaryFocusBorder": "#FFFFFF00",
+      "selectionControlsBackground": "#3BABD1",
+      "buttonSecondaryDefaultBorder": "#FFFFFF00",
+      "buttonPrimaryFocusBorder": "#FFFFFF00",
+      "iapEntitlementBackground": "#072448",
+      "tveFeaturedBackground": "#3BABD1"
+    },
+    "colorV2": {
+      "pageBackground": "#FAFDFD",
+      "pageSecondaryBackground": "#F6F9F9",
+      "pageHeadingForeground": "#072448",
+      "pageParagraphForeground": "#415A71",
+      "pageHighlightForeground": "#3BABD1",
+      "pageLinkForeground": "#3BABD1",
+      "buttonPrimaryBackground": "#3BABD1",
+      "buttonPrimaryForeground": "#FFFFFF",
+      "buttonPrimaryBorder": "#00000000",
+      "buttonSecondaryBackground": "#B0BAC780",
+      "buttonSecondaryForeground": "#FFFFFF",
+      "buttonSecondaryBorder": "#00000000",
+      "buttonPromoBackground": "#B0BAC7",
+      "buttonPromoForeground": "#FFFFFF",
+      "buttonPromoBorder": "#00000000",
+      "imageOverlayBackground": "#072448",
+      "imageOverlayHeadingForeground": "#FFFFFF",
+      "imageOverlayParagraphForeground": "#FFFFFF",
+      "imageOverlayHighlightForeground": "#3BABD1",
+      "imageOverlayLinkForeground": "#3BABD1",
+      "inputBackground": "#415A710D",
+      "inputForeground": "#415A71",
+      "inputValidation": "#943D6B",
+      "navigationBarOpaqueBackground": "#3BABD1",
+      "navigationBarGradientBackground": "#00000033",
+      "navigationBarOpaqueForeground": "#FFFFFF",
+      "navigationBarGradientForeground": "#FFFFFF",
+      "navigationBarTranslucentLightForeground": "#072448",
+      "navigationBarTranslucentDarkForeground": "#072448",
+      "iapGradientTop": "#3BABD1",
+      "iapGradientBottom": "#4ACBF7",
+      "iapForeground": "#FFFFFF",
+      "tveFeaturedBackground": "#3BABD1",
+      "menuOpaqueBackground": "#3BABD1",
+      "menuGradientBackground": "#3BABD1",
+      "menuForeground": "#FFFFFF",
+      "menuHighlightBackground": "#FFFFFF",
+      "menuHighlightForeground": "#00000000",
+      "bannerExceptionBackground": "#943D6B",
+      "bannerExceptionForeground": "#FFFFFF",
+      "bannerInfoBackground": "#EDF1F2",
+      "bannerInfoForeground": "#072448",
+      "dialogOverlayBackground": "#072448F2",
+      "dialogHeadingForeground": "#FFFFFF",
+      "dialogParagraphForeground": "#FFFFFF",
+      "videoPlayerOverlayBackground": "#000000",
+      "videoPlayerOverlayForeground": "#FFFFFF",
+      "videoPlayerLiveIndicator": "#E05D5D",
+      "videoPlayerProgressBarForeground": "#FFFFFF",
+      "videoPlayerAdPod": "#00000000",
+      "splashScreenBackground": "#3BABD1",
+      "splashScreenForeground": "#FFFFFF",
+      "tabMenuBackground": "#FAFDFD",
+      "tabMenuHighlightBackground": "#3BABD1",
+      "tabMenuForeground": "#072448",
+      "selectionControlsBackground": "#3BABD1",
+      "selectionControlsForeground": "#FFFFFF",
+      "keyboardBackground": "#00000000",
+      "keyboardForeground": "#FFFFFF",
+      "videoPlayerButtonPrimaryBackground": "#3BABD1",
+      "videoPlayerButtonPrimaryForeground": "#FFFFFF",
+      "videoPlayerButtonSecondaryBackground": "#B0BAC780",
+      "videoPlayerButtonSecondaryForeground": "#FFFFFF",
+      "itemFocusFrame": "#3BABD1"
+    },
+    "button": {
+      "primary": {
+        "shape": "PILL",
+        "style": "SOLID"
+      },
+      "secondary": {
+        "shape": "PILL",
+        "style": "SOLID"
+      }
+    }
+  },
+  "menu": {
+    "id": "hallmark-menu",
+    "mobile": {
+      "items": [
+        {
+          "id": "home",
+          "title": "Home",
+          "icon": "house_fill",
+          "destination": {
+            "type": "PAGE",
+            "id": "01F0TFGJJAG9MG4WKRF8YDJV5K"
+          }
+        },
+        {
+          "id": "browse",
+          "title": "Browse",
+          "icon": "film_fill",
+          "destination": {
+            "type": "PAGE",
+            "id": "01F0TFH96ST535V7BVBVNACBQ2"
+          }
+        },
+        {
+          "id": "live",
+          "title": "Live",
+          "icon": "video_camera_fill",
+          "destination": {
+            "type": "INTERNAL",
+            "id": "PROGRAM_LIST"
+          }
+        },
+        {
+          "id": "search",
+          "title": "Search",
+          "icon": "magnifying_glass_fill",
+          "destination": {
+            "type": "INTERNAL",
+            "id": "SEARCH"
+          }
+        },
+        {
+          "id": "more",
+          "title": "More",
+          "icon": "ellipsis_fill",
+          "destination": {
+            "type": "INTERNAL",
+            "id": "MORE"
+          }
+        }
+      ]
+    },
+    "tv": {
+      "style": "OPAQUE",
+      "focusStyle": "line",
+      "items": [
+        {
+          "id": "home",
+          "title": "Home",
+          "icon": "house_fill",
+          "destination": {
+            "type": "PAGE",
+            "id": "01F0TFGJJAG9MG4WKRF8YDJV5K"
+          }
+        },
+        {
+          "id": "browse",
+          "title": "Browse",
+          "icon": "film_fill",
+          "destination": {
+            "type": "PAGE",
+            "id": "01F0TFH96ST535V7BVBVNACBQ2"
+          }
+        },
+        {
+          "id": "live",
+          "title": "Live",
+          "icon": "calendar_fill",
+          "destination": {
+            "type": "PAGE",
+            "id": "01F3DSP08C1ENW34G2MWECG92N"
+          }
+        }
+      ],
+      "iconItems": [
+        {
+          "id": "mvpdLogo",
+          "icon": "{{tve.mvpd.logoUrl}}",
+          "visibility": {
+            "subject": "user.isLoggedIn",
+            "type": "EQ",
+            "value": "true"
+          }
+        },
+        {
+          "id": "login",
+          "title": "{{translations.login.pageTitle}}",
+          "action": {
+            "type": "authenticate"
+          },
+          "visibility": {
+            "subject": "user.isLoggedIn",
+            "type": "EQ",
+            "value": "false"
+          }
+        },
+        {
+          "id": "search",
+          "title": "Search",
+          "icon": "magnifying_glass_fill",
+          "destination": {
+            "type": "INTERNAL",
+            "id": "SEARCH"
+          }
+        },
+        {
+          "id": "more",
+          "title": "More",
+          "icon": "cog_fill",
+          "destination": {
+            "type": "INTERNAL",
+            "id": "MORE"
+          }
+        }
+      ]
+    }
+  },
+  "more": [
+    {
+      "key": "mylist",
+      "title": "settings.myList.title",
+      "type": "submenu",
+      "action": {
+        "params": {
+          "destination": {
+            "id": "FAVORITES",
+            "type": "INTERNAL"
+          }
+        },
+        "type": "navigate"
+      }
+    },
+    {
+      "title": "settings.watchHistory.title",
+      "type": "submenu",
+      "action": {
+        "params": {
+          "destination": {
+            "id": "WATCH_HISTORY",
+            "type": "INTERNAL"
+          }
+        },
+        "type": "navigate"
+      }
+    },
+    {
+      "key": "appInfo",
+      "title": "App Info",
+      "type": "submenu",
+      "items": [
+        {
+          "title": "settings.about.title",
+          "type": "header"
+        },
+        {
+          "type": "textBox",
+          "title": "settings.about.appVersion",
+          "text": "{{app.version}}"
+        },
+        {
+          "type": "textBox",
+          "title": "settings.about.device",
+          "text": "{{platform.model}}"
+        },
+        {
+          "type": "textBox",
+          "title": "settings.about.uuid",
+          "text": "{{platform.uuid}}"
+        },
+        {
+          "title": "settings.about.title",
+          "type": "header"
+        },
+        {
+          "key": "about-1",
+          "type": "textBox",
+          "title": "About Hallmark",
+          "icon": "article_fill",
+          "items": [
+            {
+              "type": "markdown",
+              "title": "About Hallmark",
+              "icon": "article_fill",
+              "text": "### About Hallmark Channel\n\n**Hallmark Channel,** owned by Hallmark Cards, Inc., is Crown Media Family Networks’ flagship 24-hour cable television network. As the country’s leading destination for quality family entertainment, Hallmark Channel delivers on the 100-year legacy of the Hallmark brand. The network features an ambitious lineup of original content, including movies, scripted primetime series, and a lifestyle show, “Home & Family.” Additionally, Hallmark Channel is the exclusive home to world premiere presentations of the acclaimed Hallmark Hall of Fame franchise. Dedicated to helping viewers celebrate life’s special moments, Hallmark Channel also offers annual holiday programming franchises including “Countdown to Christmas” and many other seasonal offerings. Rounding out the network’s diverse slate are some of television’s most beloved comedies and series, including “The Golden Girls” and “Frasier.”"
+            }
+          ]
+        },
+        {
+          "key": "about-2",
+          "type": "textBox",
+          "title": "FAQ",
+          "icon": "article_fill",
+          "items": [
+            {
+              "type": "markdown",
+              "title": "FAQ",
+              "icon": "article_fill",
+              "text": "# FAQ\n## Welcome to the Frequently Asked Questions Page\n\n### Q. Where can I purchase original Crown Media Family Networks movies, series, and specials?\n\nA.Select original Crown Media Family Networks programming is available for purchase at major retailers including Walmart, Target, and Hallmark Gold Crown Stores. You can also find a wide selection on Amazon, iTunes, or anywhere DVDs are sold.\n\n\n### Q. How can I watch or stream Hallmark content online?\n\nA. Select offerings of Hallmark Channel, Hallmark Movies & Mysteries, and Hallmark Drama programming are available on a variety of online platforms. To find out if you receive all three networks, please call your cable provider.\nHere's a list of current options:\n\n* Hallmark TV\n* iTunes\n* VUDU\n* Google Play\n* Netflix\n* Amazon Prime Video\n* Xbox\n\nThrough your pay TV provider’s TV Everywhere products. Click [here](https://www.hallmarkchannel.com/channel-locator) to find providers by zip code.\n\n\n### Q. Why does the schedule guide not match what is airing on your network?\n\nA.Schedule changes are a regular part of television and are an important part of ensuring that we continue to provide the very best in family entertainment. Please be sure to check out our schedule on our website, which is always current.\n\n* Hallmark Channel Schedule\n* Hallmark Movies & Mysteries Schedule\n*  Hallmark Drama Schedule\n\n\n### Q: I would like to add your new network, Hallmark Drama, to my lineup. How do I go about doing that?\n\nA:Hallmark Drama is currently in 10 million homes. While the network’s footprint is growing, not all pay TV providers currently carry Hallmark Drama. If Hallmark Drama is not included in your lineup of cable networks, please call your provider and let them know that you would like added to your service.\n\n\n### Q. How do I submit a story for your consideration?\n\nA.For legal reasons Crown Media Family Networks does **NOT** accept or consider unsolicited scripts, creative ideas, suggestions, or materials.\n\n\n### Q: What is Hallmark Movies Now, how do I sign up, and how much is it?\n\nA:Hallmark Movies Now is Crown Media’s subscription streaming video on demand service, which has a wholly distinct lineup of family entertainment from our linear platforms, Hallmark Channel, Hallmark Movies & Mysteries, and Hallmark Drama. Following a free 7-day trial period, the service is $5.99 a month or $59.99 a year. To join, please visit here.\n\n\n### Q: I am having technical difficulties with Hallmark Movies Now. Where can I find help?\n\nA:For assistance with any questions or technical issues with Hallmark Movies Now, you may visit [here](https://www.hmnow.com/sign-up).\n\n\n### Q: Where can I find Hallmark Publishing books?\n\nA: Hallmark Publishing’s books can be found on Amazon, iTunes, Rakuten Kobo, and at Barnes & Noble retail and online stores.\n\n\n### Q: I am having trouble accessing my Hallmark Gold Crown Rewards account. Who can assist me to log in?\n\nA: For assistance with any questions pertaining to a Crown Rewards membership, please call Hallmark Consumer Care at 1 (800) 425-5627 or visit the website [here](https://customercare.hmnow.com/hc/en-us).\n\n\n**If your questions or concerns have not been answered here, you may reach Crown Media Family Networks’ Viewer Services via email at viewers@crownmedia.com or by phone at 888-390-7474. We greatly appreciate your feedback.**"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "legal",
+      "type": "submenu",
+      "title": "settings.legal.title",
+      "items": [
+        {
+          "key": "privacyPolicy",
+          "type": "textBox",
+          "title": "settings.legal.privacyPolicy",
+          "icon": "article_fill",
+          "items": [
+            {
+              "type": "markdown",
+              "title": "settings.legal.privacyPolicy",
+              "icon": "article_fill",
+              "text": "# Privacy Policy \n\nPLEASE READ THESE PRIVACY POLICY CAREFULLY BEFORE USING THIS APPLICATION.\n\nhttps://www.hallmarkchannel.com/privacy-polic"
+            }
+          ]
+        },
+        {
+          "key": "termsOfService",
+          "type": "textBox",
+          "title": "settings.legal.termsOfService",
+          "icon": "article_fill",
+          "items": [
+            {
+              "type": "markdown",
+              "title": "settings.legal.termsOfService",
+              "icon": "article_fill",
+              "text": "# Terms and Conditions \n\nPLEASE READ THESE TERMS OF USE CAREFULLY BEFORE USING THIS APPLICATION.\n\nhttps://www.hallmarkchannel.com/crown-media-family-networks-terms-of-use"
+            }
+          ]
+        },
+        {
+          "key": "nielsonOptOut",
+          "type": "textBox",
+          "title": "Nielsen Opt Out",
+          "icon": "article_fill",
+          "items": [
+            {
+              "type": "markdown",
+              "title": "Nielsen Opt Out",
+              "icon": "article_fill",
+              "text": "# DIGITAL MEASUREMENT PRIVACY STATEMENT\n\nNielsen uses its proprietary software and products to provide digital measurement services, which measure and analyze how consumers engage with media across online, mobile and emerging technologies, and enable Nielsen to offer research insights into consumer behavior. The practices described in this Privacy Statement are undertaken by Nielsen companies providing digital measurement services around the world. Learn more about Nielsen’s [family of companies](https://www.nielsen.com/eu/en/legal/privacy-statement/gdpr-operating-entities/) or contact Nielsen’s Privacy Department for more information (see the “Contact Us” section below for our contact details).\n\nThis Digital Measurement Privacy Statement reflects Nielsen’s general digital measurement practices. However, we provide our digital measurement services to clients around the globe, and our contracts with our clients may place additional limits on what we can or cannot do with data collected when we provide such digital measurement services to them. In some cases, we may not be permitted to use and share data in all of the ways described in this Privacy Statement. When our contract with a client only permits us to process data to provide the client with services, we typically do so as a “data processor” or “service provider.” When our contract with a client permits us to process data for purposes other than providing services to the client, we may do so as a “data controller” or ”business.”\n\nPlease review the privacy statements of website publishers and other parties whose websites and applications you use to obtain specific information about data collected on those websites and applications, and how they use and process data collected, including through their use of Nielsen’s digital measurement services. We require our clients to: let their users know about the use of measurement products and software (although they may not always identify Nielsen by name); ensure they have obtained appropriate permissions to collect, use, and disclose to us information collected as a result of their use of the Nielsen digital measurement services; and ensure users are given appropriate choices with respect to the collection and use of their information.\n\n*   [Data Collection](#data-collection)\n*   [Data Use](#data-use)\n*   [Data Sharing](#data-sharing)\n*   [Basis for Processing Personal Data](#personal-data)\n*   [Data Retention and Security](#data-retention)\n*   [Choices](#choices)\n*   [Your Rights](#your-rights)\n*   [Changes to This Privacy Statement](#changes)\n*   [Contact Us](#contact-us)\n*   [About Us](#about-us)\n\n### DATA COLLECTION\n\nNielsen works with various companies, including data providers, advertisers and publishers, to measure the effectiveness and reach of content viewed or listened to, no matter what kind of device people use to consume it. For example, we help advertisers better understand campaign performances across TV, computer and mobile device audiences.\n\n**How Data is Collected:** Participating companies include Nielsen’s proprietary measurement software in their content on their chosen sites, ads, mobile apps, video players, and other internet-connected devices (such as smart TVs) or they may provide us data directly through connections to their servers and various secure data transfer methods. In this Privacy Statement the word “content” refers to audio, video, advertisements and any other media users might encounter or engage with. Nielsen’s measurement software is embedded in the content or via the devices that you use in order to gather information that helps us understand what content users are exposed to and interact with, and which advertising campaigns are effective.\n\nThe specific information collected depends on how our clients use our measurement software; a general description of the types of information we collect and how it is used is provided below. We generally do not (and cannot) identify, or attempt to identify, the individuals about whom we collect content measurement data. However, if you are a member of a Nielsen panel, we can associate measurement data collected via our measurement software with you as described below in the “What data is collected” and “Data Use” sections of this Privacy Statement, as well as in your Panelist Membership Agreement.\n\n**What data is collected:** Depending on the service, Nielsen’s proprietary measurement software collects:\n\n*   information about the content that was viewed – such as the ad campaign, program or episode that was viewed;\n*   information about where the content was viewed – such as the website or the app; and\n*   general information about the browser or device on which the content was viewed – such as whether the user viewed content on a tablet or smartphone, unique  \n    semi-persistent device identifiers which may include mobile device advertising identifier, IP address, and/or cookie identifier, and the operating system in use.\n\nWe do not track or collect information about users’ activities across sites or applications.  Data we collect may be  matched with data from Nielsen panelists or other companies that recognize their own users or that collect data about consumers generally, such as social media companies or ecommerce companies. These other companies provide Nielsen with aggregated or de-identified audience statistics (such as age and gender make-up of an audience). We do not tell these third parties what content users have viewed, and Nielsen never learns the identities of other companies’ users.\n\nData from these other sources is also used to enhance or calibrate the data collected from our measurement software, and to enable more robust research and analyses. \n\nIn some cases, we collect information directly from individuals. Occasionally, Nielsen presents short surveys to users who may or may not have been exposed to our clients’ content.\n\nResponses are voluntary, and the surveys do not ask for or collect any directly identifiable data.\n\n### DATA USE\n\nWe process personal data to provide our digital measurement services, which measure and analyze how consumers engage with media across online, mobile and emerging technologies. This enables the creation of research insights, reports, and analyses of consumer behaviors, including the composition of the audience that viewed certain content or about the effectiveness of an advertising campaign, such as an audience measurement report finding that an ad campaign was viewed by “70,000 females between the ages 24-30 in the U.S., Pacific Northwest region.”\n\nWe use tools and methods to make sure that there is no reasonable possibility of identifying users from the reports and insights we create and provide to our clients. The data we collect from users is combined with the data collected from other sources to produce aggregated reports from which users cannot be uniquely identified; if it is not aggregated, we take steps to make sure there is no reasonable possibility of re-identification.\n\nIn addition to processing personal data for our digital measurement services and research purposes as described above, we process personal data to:\n\n*   Operate and manage our IT and security systems, including to monitor such systems and identify and respond to security events;\n*   Detect and prevent fraud;\n*   Conduct research for quality assurance and product, service, and business development purposes, including research and development. This includes data analysis, audits, developing new products, producing predictive models, improving our services, identifying usage trends, and determining the effectiveness of our communications.\n*   Facilitate the day-to-day operations and financial management of the Nielsen group of companies and any corporate transactions (e.g., re-organization, merger, sale, joint venture, assignment, transfer, etc);\n*   Protect the rights, safety, property, or operations of one or more Nielsen entities, you, or others;\n*   Comply with applicable laws and regulations and establish, exercise, and/or defend the legal rights of one or more Nielsen entities; and\n*   Respond to requests and communications from law enforcement authorities or other government officials.\n\n### DATA SHARING\n\nIn connection with one or more of the data use purposes described above, we may share information, including personal data, with the following recipients.\n\n*   We employ or work with other companies or individuals to perform certain functions on our behalf. These service providers are granted access to the personal data needed to perform their functions, but are prohibited from using personal data for any other purpose.\n*   We may disclose personal data to third parties if necessary to complete any transaction you requested or authorized, or to third parties such as other market research companies and our clients in accordance with market research industry ethical guidelines.\n*   We may disclose data to third parties in the event of any reorganization, merger, sale, joint venture, assignment, transfer or other disposition of all or any portion of our business, assets, or stock.\n*   We may disclose data to third parties when disclosure is required by law or needed to exercise or preserve our legal rights, or to take action regarding potentially illegal activities,\n\nIn each case, we will take reasonable steps to ensure that the data is protected as described in this Statement.\n\nWe do not and will not sell any personal data to third parties for their own commercial use.\n\n### BASIS FOR PROCESSING PERSONAL DATA\n\nApplicable law in certain jurisdictions requires us to set out in this Privacy Statement the legal basis upon which we rely when we collect and process personal data as a data controller (i.e., data collected for our own purposes). When we collect and process personal data via the use of our measurement software on behalf of our clients (i.e., where we are only permitted to process data collected on behalf of our clients), we are typically acting as a data processor and rely on the client’s legal basis for processing.\n\nFor personal data collected about users in the European Union (“EU”)/European Economic Area (“EEA”) as a data controller we rely on one of the legal bases below in order to process such data.\n\n*   **Legitimate Interests:** We rely on our legitimate interests to process users’ personal  \n    data, provided that such interests are not overridden by the user’s interests, fundamental rights, or freedoms. In particular, we process users’ personal data in  \n    reliance on a legitimate interest in the effective and lawful operation of our business, on our and our clients’ interests in accurately measuring and analyzing audiences, the effective delivery and improvement of our products, services, and websites, information security operations, compliance with laws and regulations, compliance with requests for disclosure to law enforcement, courts, and regulatory bodies, and to prevent and detect fraud (or suspected fraud).\n*   **Compliance with legal obligations:** We may process users’ personal data if necessary for us to comply with a legal obligation arising under applicable law.\n*   **Consent:** We may rely on the consent that we or our publishers obtain from users in order to perform our digital measurement services.\n\n### DATA RETENTION AND SECURITY\n\nNielsen uses reasonable organizational, technical and administrative measures to protect the security and confidentiality of data within our control.\n\nWe store personal data for as long as needed to provide our digital measurement services to clients, for our research and analyses purposes as described in this Privacy Statement, and in accordance with law. We may process and store data in users’ home countries or we may transfer data to another country. Wherever we maintain data, we will apply the terms of this Privacy Statement and any applicable law.\n\nFor personal data collected about users in the EU/EEA, where there is a need to transfer\n\npersonal data to a party based in a non-EU country that has not been recognized by the European Commission as providing an adequate level of data protection, we do so on the basis of EU Standard Contractual Clauses (SCCs), a set of contractual terms and conditions issued by the European Commission that parties can agree to in order to transfer data in compliance with data protection laws and regulations, or pursuant to other safeguards deemed appropriate under applicable laws and regulations. Further details relating to the transfers described above and the safeguards used with respect to such transfers can be requested by contacting us at privacy.department@nielsen.com.\n\n### CHOICES\n\nNielsen believes that you should have a choice about whether to contribute to our research and insights with your data. If you do not wish to participate in Nielsen’s digital measurement research, you may opt out. \n\nIf you choose to be excluded from the Nielsen measurement, Nielsen will only collect aggregated counts of how many times and for how long a piece of content (e.g. a video or an advertising) has been viewed.\n\nYou may opt-out in the following ways:\n\n**Browser**:  Where measurement of user activity on browsers is based on the use of cookies, you can opt out by clicking [**here**](https://priv-policy.imrworldwide.com/priv/browser/cookie-policy-de-en.html?optout=1).  \n\nWhen you opt out, our opt-out mechanism replaces our unique measurement cookie with an “Opt_Out” cookie. However, if you delete all of your regular cookies, this will include your Nielsen “Opt_Out” cookie, and you will have to opt out again.\n\nPlease note that if you use more than one browser, you will need to opt out on each one. Safari and Firefox users should be aware that these browsers prevent the placing of cookies which means that Nielsen is only able to capture traffic counts without being able to associate this to demographic information. This is equivalent to opting out on other browsers.\n\nIf you have opted out, but change your mind and want to participate in Nielsen’s digital measurement research, you may [opt back in](https://priv-policy.imrworldwide.com/priv/browser/cookie-policy-reset-us-en.html?optout=0).\n\n**Mobile Apps:** In the mobile app environment, we require each application that contains active Nielsen measurement software to disclose that measurement software is included in that app, and provide access to an opt out mechanism.\n\nPlease note that some older versions of apps that contain Nielsen measurement software and / or devices that leverage older operating systems are able to provide only an app-level and/or device-specific opt out. For these apps/devices you will need to opt out in each app on each device. In newer apps and operating systems, a device-level opt-out is available by activating  the “Limit Ad Tracking/App Tracking” (for iOS devices) or “Opt out of Ads Personalization” (for Android devices) option in your device’s settings. If you use more than one mobile device, you will need to change the settings on each device.\n\n**Other devices:** Technologies and devices other than web browsers and mobile applications leverage unique, non-standard identifiers. How those are managed will vary from manufacturer to manufacturer. For internet-connected devices, we require our clients to provide functionality that enables users to opt-out of the collection of data when they leverage Nielsen measurement software.\n\n### YOUR RIGHTS\n\nDepending on your country or state (US) of residence, under applicable law users may have various additional rights with respect to personal data processed. Where we act as a service provider or data processor to our clients, we will depend on our clients to facilitate the exercise of these rights and we will cooperate with them insofar as it is possible.\n\nRights may include one or more of the following:\n\n*   To request confirmation as to whether or not personal data is processed, and, where that is the case, access a copy of the data we hold about you and to request it is updated or corrected where it is inaccurate;\n*   To object to processing of personal data held about you;\n*   To propose other restrictions on the processing of personal data about you;\n*   To request that personal data about you is deleted (where applicable); and\n*   To lodge a complaint with the data protection or privacy authority in your country of residence regarding the processing of personal data.\n\nUsers that are interested in exercising one or more of the rights described above can submit a request [here](https://privacyportalde-cdn.onetrust.com/dsarwebform/70b0083d-d519-4ad2-84ca-96b7c5f8e1a9/9810a8bc-e54d-4d70-bac0-5e4d781ef5b9.html).  Nielsen does not discriminate against users who exercise their rights under applicable law.\n\nOnly you or an “Authorized Agent” permitted to act on your behalf may submit a request. An ‘Authorized Agent” means a natural person or a business entity you have authorized to act on your behalf by providing your written permission. Please note, we may deny a request from an Authorized Agent if they do not submit proof that they have been authorized by you to act on your behalf.\n\nYour request must:\n\n*   Provide sufficient information that allows us to reasonably verify you are the person about whom we collected personal data or an Authorized Agent; and\n*   Describe your request with sufficient detail that allows us to properly understand,  \n    evaluate, and respond to it.\n\nWe cannot respond to your request or provide you with personal data if we cannot verify your identity or your authority to make the request or confirm the personal data relates to you. To verify your identity, we will match data you provide when you submit your request to any personal data we already maintain.\n\nAdditional information for users in the EU/EEA:\n\nUsers that have questions or concerns about Nielsen’s collection and processing of personal data can contact our EU Data Protection Officer at privacy.department@nielsen.com. Users that are dissatisfied with the way Nielsen has processed personal data or any privacy query or request that they have raised to us have the right to complain to the Supervisory Authority in their country of residence or the location where the issue that is the subject of the complaint occurred. Users can find the contact details of all the national Supervisory Authorities by visiting: [EU National Data Protection Authorities](https://edpb.europa.eu/about-edpb/board/members_en).\n\n### CHANGES TO THIS PRIVACY STATEMENT\n\nNielsen reserves the right to update and make changes to this Privacy Statement. Where we intend to process previously collected personal data for a new purpose(s), we will provide updated notice and choice in accordance with applicable law.\n\nThis Privacy Statement replaces any other statement, whether written or oral, made to you about our practices with respect to Nielsen’s collection and use of personal data for digital measurement services.\n\n### CONTACT US\n\nIf you have any comments or questions regarding this privacy Statement, please contact us at privacy.department@nielsen.com.\n\n### ABOUT NIELSEN\n\n**THANK YOU – WE APPRECIATE AND VALUE YOUR PARTICIPATION!**\n\nNielsen Holdings plc (NYSE: NLSN) is a global measurement and data analytics company that provides the most complete and trusted view available of consumers and markets worldwide. The company’s approach marries proprietary Nielsen data with other data sources to help clients around the world understand what’s happening now, what’s happening next, and how to best act on this knowledge.For more information, please visit [www.nielsen.com](https://www.nielsen.com).\n\n_This Privacy Statement was last updated August 2020._"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "button.login",
+      "type": "button",
+      "action": {
+        "params": {
+          "destination": {
+            "id": "LOGIN",
+            "type": "INTERNAL"
+          }
+        },
+        "type": "authenticate"
+      }
+    }
+  ],
+  "features": {
+    "accounts": [
+      {
+        "enabled": true,
+        "key": "tve",
+        "properties": {
+          "pollingSeconds": 20,
+          "actionableMvpds": [
+            {
+              "id": "Comcast_SSO",
+              "url": "https://www.xfinity.com/stream/"
+            }
+          ]
+        }
+      }
+    ],
+    "analytics": [
+      {
+        "enabled": true,
+        "key": "nielsen",
+        "events": {
+          "playback.requested": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ],
+          "playback.play": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ],
+          "playback.pause": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ],
+          "playback.resume": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ],
+          "playback.complete": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ],
+          "playback.stop": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ],
+          "playback.adPodStart": [],
+          "playback.adStart": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ],
+          "playback.adComplete": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ],
+          "playback.adPodComplete": [
+            "contentId",
+            "program",
+            "title",
+            "length",
+            "publishDate",
+            "fullEpisode",
+            "adProvider",
+            "hasAds",
+            "liveStream",
+            "genre"
+          ]
+        },
+        "valueOverrides": {
+          "genre": "{{item.extras.nielsenGenreCode}}",
+          "channelName": "{% if item.subtype == 'LIVE_CHANNEL' or item.subtype == 'LIVE_PROGRAM' %}{% if item.id == 'live' %}HC{% elsif item.id == 'hmmlive' %}HMM{% elsif item.id == 'hdlive' %}HLDRM{% else %}HTV{% endif %}{% else %}HTV{% endif %}"
+        }
+      },
+      {
+        "enabled": true,
+        "key": "google",
+        "properties": {
+          "trackingID": "UA-131161801-15"
+        },
+        "events": {
+          "screen.view": [
+            "screenTitle",
+            "screenType",
+            "dimension14",
+            "dimension15",
+            "dimension16",
+            "dimension17",
+            "dimension18",
+            "dimension25",
+            "dimension26",
+            "dimension28",
+            "dimension32",
+            "dimension50"
+          ]
+        },
+        "valueOverrides": {
+          "screenTitle": "{% case item.subtype %}{% when \"VIDEO\" %}Movie Details > Movie > {{item.title}}{% when \"TV_SHOW\" %}Serie Details > Series > {{item.title}}{% when \"TV_SHOW_EPISODE\" %}Serie Details > Series > {{item.tvShow.title}} > {{item.title}}{% when \"GENERIC\" %}Category > Category page {{item.title}}{% else %}{{screen.title}}{% endcase %}",
+          "dimension14": "{{platform.deviceId}}",
+          "dimension15": "{{platform.type | downcase}}",
+          "dimension16": "{{platform.os}}",
+          "dimension17": "{{platform.osVersion}}",
+          "dimension18": "{{platform.userAgent}}",
+          "dimension25": "{{item.channelName}}",
+          "dimension26": "PROD",
+          "dimension28": "Android TV",
+          "dimension32": "{{tve.mvpd.name}}",
+          "dimension50": "{{user.id}}"
+        }
+      },
+      {
+        "enabled": true,
+        "key": "datazoom-akamai",
+        "properties": {
+          "configID": "272f73c7-ada2-4d65-a923-126f572330ad",
+          "customMetaData": {
+            "accedo_session_id": "{{user.sessionId}}",
+            "channel": "{% if item.subtype == 'LIVE_CHANNEL' or item.subtype == 'LIVE_PROGRAM' %}{% if item.id == 'live' %}HC{% elsif item.id == 'hmmlive' %}HMM{% elsif item.id == 'hdlive' %}HLDRM{% else %}HTV{% endif %}{% else %}HTV{% endif %}",
+            "channelType": "{% if item.subtype == 'LIVE_CHANNEL' or item.subtype == 'LIVE_PROGRAM' %}linear{% else %}non-linear{% endif %}",
+            "crownAssetId": "{% if item.subtype != 'LIVE_CHANNEL' and item.subtype != 'LIVE_PROGRAM' %}{{item.id}}{% endif %}",
+            "deviceType": "{{platform.type | downcase}}",
+            "device_id": "{{platform.deviceId}}",
+            "environment": "PROD",
+            "googleAnalyticsClientId": "{{platform.uuid}}",
+            "member_uuid": "{{user.id}}",
+            "mvpd": "{{tve.mvpd.name}}",
+            "os": "{{platform.os}}",
+            "osVersion": "{{platform.osVersion}}",
+            "platform": "Android TV",
+            "promoType": "",
+            "seriesName": "{% case item.subtype %}{% when \"TV_SHOW\" %}{{item.title}}{% when \"TV_SHOW_EPISODE\" %}{{item.tvShow.title}}{% else %}{% endcase %}",
+            "siteSection": "",
+            "titleClass": "{{item.extras.titleClass}}",
+            "titleEpisodeName": "{% if item.subtype != 'LIVE_CHANNEL' and item.subtype != 'LIVE_PROGRAM' %}{{item.title}}{% endif %}",
+            "videoForm": "{% if item.subtype == 'LIVE_CHANNEL' or item.subtype == 'LIVE_PROGRAM' %}live{% else %}{{item.extras.category}}{% endif %}"
+          },
+          "url": "https://platform.datazoom.io/beacon/v1/"
+        },
+        "events": {},
+        "valueOverrides": {}
+      },
+      {
+        "enabled": true,
+        "key": "comscore",
+        "events": {
+          "playback.requested": [
+            "position",
+            "ns_st_ci",
+            "ns_st_pr",
+            "ns_st_sn",
+            "ns_st_en",
+            "ns_st_ep",
+            "ns_st_cl",
+            "ns_st_ge",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_ct",
+            "ns_st_st",
+            "ns_st_pu",
+            "c2",
+            "c3",
+            "c4",
+            "c6",
+            "liveStream"
+          ],
+          "playback.play": [
+            "position",
+            "ns_st_ci",
+            "ns_st_pr",
+            "ns_st_sn",
+            "ns_st_en",
+            "ns_st_ep",
+            "ns_st_cl",
+            "ns_st_ge",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_ct",
+            "ns_st_st",
+            "ns_st_pu",
+            "c2",
+            "c3",
+            "c4",
+            "c6",
+            "liveStream"
+          ],
+          "playback.pause": [
+            "ns_st_ci",
+            "ns_st_pr",
+            "ns_st_sn",
+            "ns_st_en",
+            "ns_st_ep",
+            "ns_st_cl",
+            "ns_st_ge",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "position",
+            "liveStream"
+          ],
+          "playback.resume": [
+            "position",
+            "ns_st_ci",
+            "ns_st_pr",
+            "ns_st_sn",
+            "ns_st_en",
+            "ns_st_ep",
+            "ns_st_cl",
+            "ns_st_ge",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.seekStart": [
+            "position",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.seekComplete": [
+            "position",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.bufferStart": [
+            "position",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.bufferComplete": [
+            "position",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.adPodStart": [
+            "position",
+            "ns_st_cl",
+            "ns_st_ct",
+            "ns_st_ia",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.adStart": [
+            "position",
+            "ns_st_cl",
+            "ns_st_ct",
+            "ns_st_ia",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.adPodComplete": [
+            "position",
+            "ns_st_cl",
+            "ns_st_ct",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.adComplete": [
+            "position",
+            "ns_st_cl",
+            "ns_st_ct",
+            "ns_st_ddt",
+            "ns_st_tdt",
+            "ns_st_st",
+            "ns_st_pu",
+            "liveStream"
+          ],
+          "playback.stop": [
+            "ns_st_ci",
+            "ns_st_cl",
+            "ns_st_st",
+            "ns_st_pu",
+            "ns_st_pr",
+            "ns_st_ep",
+            "ns_st_sn",
+            "ns_st_en",
+            "ns_st_ge",
+            "ns_st_ia",
+            "ns_st_ce",
+            "c2",
+            "c3",
+            "c4",
+            "c6",
+            "liveStream"
+          ],
+          "playback.complete": [
+            "ns_st_ci",
+            "ns_st_cl",
+            "ns_st_st",
+            "ns_st_pu",
+            "ns_st_pr",
+            "ns_st_ep",
+            "ns_st_sn",
+            "ns_st_en",
+            "ns_st_ge",
+            "ns_st_ia",
+            "ns_st_ce",
+            "c2",
+            "c3",
+            "c4",
+            "c6",
+            "liveStream"
+          ],
+          "playback.heartbeat": [
+            "ns_st_ci",
+            "ns_st_cl",
+            "ns_st_st",
+            "ns_st_pu",
+            "ns_st_pr",
+            "ns_st_ep",
+            "ns_st_sn",
+            "ns_st_en",
+            "ns_st_ge",
+            "ns_st_ia",
+            "ns_st_ce",
+            "liveStream"
+          ]
+        },
+        "valueOverrides": {
+          "ns_ap_an": "Hallmark",
+          "ns_ap_bi": "",
+          "ns_st_st": "Hallmark Channel Everywhere",
+          "ns_st_pu": "Hallmark Channel Everywhere",
+          "c2": "8272010",
+          "c3": "CROWNMEDIA",
+          "c4": "HALLMARKCHANNELEVERYWHERE",
+          "c6": "{{item.program}} - {{item.title}}",
+          "ns_st_sn": "{{item.tvShowSeason.season.number}}",
+          "ns_st_en": "{{item.episode.number}}",
+          "ns_st_ge": "{{item.extras.comscoreGenre}}"
+        }
+      }
+    ],
+    "favorites": [
+      {
+        "enabled": true,
+        "key": "one"
+      }
+    ],
+    "forceUpdate": [
+      {
+        "enabled": false,
+        "key": "forceUpdate",
+        "properties": {
+          "minimumRequiredAppVersion": "1.0.0",
+          "minimumRequiredOSVersion": 21
+        }
+      }
+    ],
+    "search": [
+      {
+        "enabled": true,
+        "key": "one",
+        "properties": {
+          "searchResultsPageId": "01E7Q5X5GCP9CVZXD0JF82DYQ3",
+          "globalSearch": {
+            "itemId": "{{item.id}}",
+            "itemTitle": "{{item.title}}",
+            "itemDescription": "{{item.description}}",
+            "itemImage": "item.images.poster.wide",
+            "itemSubType": "{{item.subtype}}",
+            "itemDuration": "{{item.video.duration}}",
+            "itemReleaseDate": "{{item.releaseDate}}"
+          }
+        }
+      }
+    ],
+    "schedule": [
+      {
+        "enabled": true,
+        "key": "programList",
+        "properties": {
+          "tabBarDays": 14,
+          "tabBarDateFormat": "E d",
+          "channelCornerRadius": 3,
+          "channelTitle": "{{item.title}}",
+          "channelImage": "item.images.logo.landscape",
+          "channelPlaybackUrl": "{{item.video.playback}}",
+          "scheduleTimeFormat": "hh:mm aa",
+          "scheduleTitle": "{{item.title}}",
+          "scheduleSubTitle": "{{item.video.parentalRatings[0].advisoryCodes | join: ' + '}}",
+          "scheduleDescription": "{{item.description}}"
+        }
+      }
+    ],
+    "videoPlayer": [
+      {
+        "enabled": true,
+        "key": "akamai",
+        "properties": {
+          "licenseKey": "Si05KN4O3FYnWp8ZStrzMW_PUzkcTlZjVKOxRVBZkAaYtXrukiNFWSOwzVUqc-IPAxyic0cA1O3WPOHBjAfnZw==",
+          "akamaiMediaAnalytics": {
+            "enabled": true,
+            "beacon": "https://ma1275-r.analytics.edgekey.net/config/beacon-17072.xml",
+            "dimensions": {
+              "device": "{{platform.model}}",
+              "playerId": "AC {{platform.device}} Ver {{app.version}}",
+              "title": "{{item.title}}",
+              "category": "LONG",
+              "subcategory": "{{tve.mvpd.name}}"
+            }
+          },
+          "freewheel": {
+            "networkId": 379152,
+            "adServerUrl": "https://cue.v.fwmrm.net",
+            "profile": "379152:hallmark_androidtv_live",
+            "siteSectionId": "hallmark_hce_androidtv"
+          }
+        }
+      }
+    ],
+    "videoPlayerControlsView": [
+      {
+        "enabled": true,
+        "key": "native",
+        "properties": {
+          "allowScaling": false,
+          "tvRestartButtonEnabled": true
+        }
+      }
+    ],
+    "watchNext": [
+      {
+        "enabled": true,
+        "key": "androidTV",
+        "properties": {
+          "itemId": "{{item.id}}",
+          "title": "{{item.title}}",
+          "subType": "{{item.subtype}}",
+          "description": "{{item.shortDescription}}",
+          "duration": "{{item.video.duration}}",
+          "releaseDate": "{{item.releaseDate}}",
+          "posterImage": "item.images.still.wide",
+          "rating": "item.video.parentalRatings",
+          "genre": "item.genres"
+        }
+      }
+    ],
+    "watchHistory": [
+      {
+        "enabled": true,
+        "key": "one",
+        "properties": {
+          "playbackProgressUpdateInterval": 10
+        }
+      }
+    ]
+  },
+  "pages": {
+    "VIDEO": "01F0TFE945FJ2FY6DX8FGF83PP",
+    "TV_SHOW": "01F0TFE945KTEG89GQTVZ7RSZK",
+    "TV_SHOW_EPISODE": "01F0TFE8MGR2SF0G0C43TZJ4AT",
+    "LIVE_CHANNEL": ""
+  }
+}
