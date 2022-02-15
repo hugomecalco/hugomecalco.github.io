@@ -973,7 +973,7 @@
     ],
     "watchHistory": [
       {
-        "enabled": true,
+        "enabled": false,
         "key": "one",
         "properties": {
           "playbackProgressUpdateInterval": 10
