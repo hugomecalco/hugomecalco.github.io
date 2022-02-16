@@ -595,7 +595,7 @@
         }
       },
       {
-        "enabled": true,
+        "enabled": false,
         "key": "datazoom-akamai",
         "properties": {
           "configID": "272f73c7-ada2-4d65-a923-126f572330ad",
