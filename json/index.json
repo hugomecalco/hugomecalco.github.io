@@ -899,7 +899,6 @@
           "licenseKey": "Si05KN4O3FYnWp8ZStrzMW_PUzkcTlZjVKOxRVBZkAaYtXrukiNFWSOwzVUqc-IPAxyic0cA1O3WPOHBjAfnZw==",
           "akamaiMediaAnalytics": {
             "enabled": true,
-            "beacon": "https://ma1275-r.analytics.edgekey.net/config/beacon-17072.xml",
             "dimensions": {
               "device": "{{platform.model}}",
               "playerId": "AC {{platform.device}} Ver {{app.version}}",
