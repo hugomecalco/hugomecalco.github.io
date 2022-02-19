@@ -315,33 +315,6 @@
   },
   "more": [
     {
-      "key": "mylist",
-      "title": "settings.myList.title",
-      "type": "submenu",
-      "action": {
-        "params": {
-          "destination": {
-            "id": "FAVORITES",
-            "type": "INTERNAL"
-          }
-        },
-        "type": "navigate"
-      }
-    },
-    {
-      "title": "settings.watchHistory.title",
-      "type": "submenu",
-      "action": {
-        "params": {
-          "destination": {
-            "id": "WATCH_HISTORY",
-            "type": "INTERNAL"
-          }
-        },
-        "type": "navigate"
-      }
-    },
-    {
       "key": "appInfo",
       "title": "App Info",
       "type": "submenu",
@@ -447,19 +420,6 @@
           ]
         }
       ]
-    },
-    {
-      "title": "button.login",
-      "type": "button",
-      "action": {
-        "params": {
-          "destination": {
-            "id": "LOGIN",
-            "type": "INTERNAL"
-          }
-        },
-        "type": "authenticate"
-      }
     }
   ],
   "features": {
@@ -635,7 +595,7 @@
         }
       },
       {
-        "enabled": true,
+        "enabled": false,
         "key": "datazoom-akamai",
         "properties": {
           "configID": "272f73c7-ada2-4d65-a923-126f572330ad",
@@ -881,7 +841,7 @@
     ],
     "favorites": [
       {
-        "enabled": true,
+        "enabled": false,
         "key": "one"
       }
     ],
@@ -938,8 +898,7 @@
         "properties": {
           "licenseKey": "Si05KN4O3FYnWp8ZStrzMW_PUzkcTlZjVKOxRVBZkAaYtXrukiNFWSOwzVUqc-IPAxyic0cA1O3WPOHBjAfnZw==",
           "akamaiMediaAnalytics": {
-            "enabled": true,
-            "beacon": "https://ma1275-r.analytics.edgekey.net/config/beacon-17072.xml",
+            "enabled": false,
             "dimensions": {
               "device": "{{platform.model}}",
               "playerId": "AC {{platform.device}} Ver {{app.version}}",
@@ -986,7 +945,7 @@
     ],
     "watchHistory": [
       {
-        "enabled": true,
+        "enabled": false,
         "key": "one",
         "properties": {
           "playbackProgressUpdateInterval": 10
