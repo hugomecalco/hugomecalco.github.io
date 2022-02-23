@@ -841,7 +841,7 @@
     ],
     "favorites": [
       {
-        "enabled": false,
+        "enabled": true,
         "key": "one"
       }
     ],
