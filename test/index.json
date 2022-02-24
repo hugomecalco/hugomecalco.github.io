@@ -281,6 +281,18 @@
           }
         },
         {
+          "id": "login",
+          "title": "{{translations.login.pageTitle}}",
+          "action": {
+            "type": "authenticate"
+          },
+          "visibility": {
+            "subject": "user.isLoggedIn",
+            "type": "EQ",
+            "value": "false"
+          }
+        },
+        {
           "id": "search",
           "title": "Search",
           "icon": "magnifying_glass_fill",
