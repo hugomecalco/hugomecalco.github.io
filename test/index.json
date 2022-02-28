@@ -425,7 +425,7 @@
   "features": {
     "accounts": [
       {
-        "enabled": false,
+        "enabled": true,
         "key": "tve",
         "properties": {
           "pollingSeconds": 20,
