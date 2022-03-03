@@ -447,25 +447,12 @@
           ]
         }
       ]
-    },
-    {
-      "title": "button.login",
-      "type": "button",
-      "action": {
-        "params": {
-          "destination": {
-            "id": "LOGIN",
-            "type": "INTERNAL"
-          }
-        },
-        "type": "authenticate"
-      }
     }
   ],
   "features": {
     "accounts": [
       {
-        "enabled": true,
+        "enabled": false,
         "key": "tve",
         "properties": {
           "pollingSeconds": 20,
