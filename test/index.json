@@ -272,27 +272,6 @@
       ],
       "iconItems": [
         {
-          "id": "mvpdLogo",
-          "icon": "{{tve.mvpd.logoUrl}}",
-          "visibility": {
-            "subject": "user.isLoggedIn",
-            "type": "EQ",
-            "value": "true"
-          }
-        },
-        {
-          "id": "login",
-          "title": "{{translations.login.pageTitle}}",
-          "action": {
-            "type": "authenticate"
-          },
-          "visibility": {
-            "subject": "user.isLoggedIn",
-            "type": "EQ",
-            "value": "false"
-          }
-        },
-        {
           "id": "search",
           "title": "Search",
           "icon": "magnifying_glass_fill",
@@ -425,7 +404,7 @@
   "features": {
     "accounts": [
       {
-        "enabled": true,
+        "enabled": false,
         "key": "tve",
         "properties": {
           "pollingSeconds": 20,
