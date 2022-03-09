@@ -315,33 +315,6 @@
   },
   "more": [
     {
-      "key": "mylist",
-      "title": "settings.myList.title",
-      "type": "submenu",
-      "action": {
-        "params": {
-          "destination": {
-            "id": "FAVORITES",
-            "type": "INTERNAL"
-          }
-        },
-        "type": "navigate"
-      }
-    },
-    {
-      "title": "settings.watchHistory.title",
-      "type": "submenu",
-      "action": {
-        "params": {
-          "destination": {
-            "id": "WATCH_HISTORY",
-            "type": "INTERNAL"
-          }
-        },
-        "type": "navigate"
-      }
-    },
-    {
       "key": "appInfo",
       "title": "App Info",
       "type": "submenu",
@@ -447,25 +420,12 @@
           ]
         }
       ]
-    },
-    {
-      "title": "button.login",
-      "type": "button",
-      "action": {
-        "params": {
-          "destination": {
-            "id": "LOGIN",
-            "type": "INTERNAL"
-          }
-        },
-        "type": "authenticate"
-      }
     }
   ],
   "features": {
     "accounts": [
       {
-        "enabled": true,
+        "enabled": false,
         "key": "tve",
         "properties": {
           "pollingSeconds": 20,
@@ -881,7 +841,7 @@
     ],
     "favorites": [
       {
-        "enabled": true,
+        "enabled": false,
         "key": "one"
       }
     ],
@@ -986,7 +946,7 @@
     ],
     "watchHistory": [
       {
-        "enabled": true,
+        "enabled": false,
         "key": "one",
         "properties": {
           "playbackProgressUpdateInterval": 10
