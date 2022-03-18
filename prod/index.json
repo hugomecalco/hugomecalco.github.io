@@ -887,7 +887,7 @@
         "enabled": true,
         "key": "akamai",
         "properties": {
-          "licenseKey": "JE8Ry4OCsQ-h_IsvfD1KmOXPWnZwofXDRhUTHERxxev0BHv_eAaV-cVQ01MXJQkBG5Sc4EmSv0GKHABdsV__rQ==",
+          "licenseKey": "crownmedia",
           "akamaiMediaAnalytics": {
             "enabled": true,
             "beacon": "https://ma1275-r.analytics.edgekey.net/config/beacon-17072.xml",
